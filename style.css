@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body {
+    background-color: #1C1C1C;
+    color: white; 
+    overflow-x: hidden;
+    font-family: arial;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: black;
+    color: white; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-family: Georgia, serif;
+    
+}
+
+/* Estilo do logo */
+.logo {
+    display: flex; 
+    align-items: center; 
+    
+
+}
+
+.logo img {
+    width: 100px; /* Largura da imagem do logo */
+    margin-right: 10px; /* Espaçamento à direita da imagem */
+
+}
+
+/* Estilo da navegação */
+nav {
+    display: flex; /* Flexbox para a navegação */
+}
+
+nav a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    margin: 0 15px; /* Margem horizontal entre os links */
+    transition: color 0.3s; /* Transição suave para a cor */
+    padding: 10px;
+}
+
+nav a:hover {
+    color: black; /* Cor dos links ao passar o mouse */
+    background-color: #e6b800;
+    border-radius: 7px;
+    padding: 10px;
+    
+}
+#sobre{
+    background-color: white;
+    border-radius: 20px;
+    padding-top:10px;
+    margin:50px;
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+}
+h2{
+    text-align: center;
+    margin-bottom:20px;
+}
+
+#highlight{
+    padding: 10px;
+    margin: 20px;
+}
+.cta-buttons{
+    margin-top:20px;
+}
+.parallax {
+    
+    height: 700px; 
+    background-image: url('imagens/parallax.png'); 
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+/* Estilo do botão de chamada à ação */
+.cta {
+    background-color: #ffcc00; /* Cor do botão */
+    color: #000; /* Cor do texto no botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.cta:hover {
+    background-color: #e6b800; /* Cor do botão ao passar o mouse */
+}
+
+/* Seções */
+section {
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para os cards de jogador */
+/* Seção de jogadores */
+#players {
+    display: flex; /* Alinha os cards em linha */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha se necessário */
+    justify-content: center; /* Centraliza os cards na linha */
+    
+}
+
+/* Estilo para os cards de jogador */
+.player-card {
+    background-color: #fff; /* Cor de fundo branca */
+    border: 1px solid #ddd; /* Borda suave */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    margin: 15px; /* Margem entre os cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Para o efeito de sombra */
+    flex: 1 1 200px; /* Permite que os cards tenham largura flexível */
+    max-width: 300px; /* Largura máxima dos cards */
+    color: black;
+}
+
+.player-card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:black;
+}
+main{
+    background-color: #4F4F4F;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.401);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#furiosos{
+    background-color: white;
+    border-radius: 10px;
+    color:black;
+}
+/* Estilos do rodapé */
+footer {
+    background-color: black; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    position: relative; /* Para o posicionamento */
+    bottom: 0; /* Fica na parte inferior */
+    width: 100%; /* Largura total */
+}
