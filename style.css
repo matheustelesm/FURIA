@@ -1,7 +1,8 @@
+@charset "UTF-8";
+
 *{
     margin: 0px;
     padding: 0px;
-    
 }
 
 
@@ -13,8 +14,6 @@ body {
     padding-top: 80px; 
 }
 
-
-/* Estilo do cabeçalho */
 header {
     background-color: black;
     color: white; 
@@ -24,11 +23,11 @@ header {
     align-items: center; 
     font-family: Arial, serif;
     font-size: 18px;
-    position: fixed; /* Fixa o cabeçalho */
-    top: 0; /* Alinha o cabeçalho ao topo */
-    left: 0; /* Alinha o cabeçalho à esquerda */
-    right: 0; /* Alinha o cabeçalho à direita */
-    z-index: 1000; /* Coloca o cabeçalho acima de outros elementos */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
 }
 
 h1, heade{
@@ -36,7 +35,7 @@ h1, heade{
     font-weight: 600;
     font-style: normal;
 }
-/* Estilo do logo */
+
 .logo {
     display: flex; 
     align-items: center; 
@@ -45,40 +44,38 @@ h1, heade{
 }
 
 .logo img {
-    width: 100px; /* Largura da imagem do logo */
-    margin-right: 10px; /* Espaçamento à direita da imagem */
+    width: 100px; 
+    margin-right: 10px; 
 
-}
-
-/* Estilo da navegação */
-nav {
-    display: flex; /* Flexbox para a navegação */
 }
 
 nav a {
-    color: #fff; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado dos links */
-    margin: 0 15px; /* Margem horizontal entre os links */
-    transition: color 0.3s; /* Transição suave para a cor */
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    transition: color 0.3s; 
     padding: 10px;
 }
 
 nav a:hover {
-    color: black; /* Cor dos links ao passar o mouse */
+    color: black; 
     background-color: #e6b800;
     border-radius: 7px;
     padding: 10px;
     
 }
-#sobre{
+#sobre {
     background-color: white;
-    border-radius: 20px;
-    padding-top:10px;
-    margin:50px;
-    font-size: 18px;
-    color: black;
-    text-align: justify;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #dcdcdc; 
+    text-align: center;
+    color: #333; 
 }
+
 h2{
     text-align: center;
     margin-bottom:20px;
@@ -92,7 +89,6 @@ h2{
     margin-top:20px;
 }
 .parallax {
-    
     height: 700px; 
     background-image: url('imagens/parallax.png'); 
     background-attachment: fixed;
@@ -102,67 +98,84 @@ h2{
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    color: white; 
     text-align: center;
     border-radius: 10px;
 }
 
-
-/* Estilo do botão de chamada à ação */
 .cta {
-    background-color: #ffcc00; /* Cor do botão */
-    color: #000; /* Cor do texto no botão */
-    padding: 10px 20px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove sublinhado */
-    transition: background-color 0.3s; /* Transição suave */
+    background-color: #FFD700; 
+    color: #000; 
+    padding: 10px 20px;
+    border: 1px solid #e0b800; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
+    cursor: pointer; 
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.player-info{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
 }
 
 .cta:hover {
-    background-color: #e6b800; /* Cor do botão ao passar o mouse */
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Seções */
 section {
-    padding: 40px 20px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+    padding: 40px 20px; 
+    text-align: center; 
+}
+.cargo{ 
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
 }
 
-/* Estilo para os cards de jogador */
-/* Seção de jogadores */
 #players {
-    display: flex; /* Alinha os cards em linha */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha se necessário */
-    justify-content: center; /* Centraliza os cards na linha */
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
 }
 
-/* Estilo para os cards de jogador */
 .player-card {
-    background-color: #fff; /* Cor de fundo branca */
-    border: 1px solid #ddd; /* Borda suave */
-    border-radius: 8px; /* Cantos arredondados */
-    padding: 20px; /* Espaçamento interno */
-    margin: 15px; /* Margem entre os cards */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
-    text-align: center; /* Centraliza o texto */
-    position: relative; /* Para o efeito de sombra */
-    flex: 1 1 200px; /* Permite que os cards tenham largura flexível */
-    max-width: 300px; /* Largura máxima dos cards */
-    color: black;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    width: 200px; 
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+.player-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; 
+    border: 3px solid #e0e0e0; 
+    margin-bottom: 10px;
 }
 
 .player-card:hover {
-    transform: scale(1.05); /* Aumenta o tamanho do card */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
+
+
 a{
     text-decoration: none;
     color: white;
 }
+
 a:hover{
     color:black;
 }
+
 main{
     background-color: #4F4F4F;
     min-width: 300px;
@@ -174,11 +187,13 @@ main{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 #furiosos{
     background-color: white;
     border-radius: 10px;
     color:black;
 }
+
 .redes{
     text-align: center;
     width: 20px;
@@ -187,23 +202,26 @@ main{
     margin: 5px;
     transition: transform 0.3s ease;
 }
+
 .redes:hover{
     transform: scale(1.2);
 }
+
 .img-link{
     width:15px;
     height: 15px;
 }
 
 footer {
-    background-color: black; /* Cor de fundo do rodapé */
-    color: #fff; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Espaçamento interno */
-    position: relative; /* Para o posicionamento */
-    bottom: 0; /* Fica na parte inferior */
-    width: 100%; /* Largura total */
+    background-color: black; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
 }
+
 footer a:hover{
     color: white;
     font-weight: bold;
