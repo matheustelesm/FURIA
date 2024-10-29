@@ -85,9 +85,16 @@ h2{
     padding: 10px;
     margin: 20px;
 }
+
 .cta-buttons{
     margin-top:20px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.cta-buttons:hover{
+    transform: scale(1.05);
+}
+
 .parallax {
     height: 700px; 
     background-image: url('imagens/parallax.png'); 
@@ -114,16 +121,16 @@ h2{
     transition: transform 0.2s, box-shadow 0.2s; 
 }
 
+.cta:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
 .player-info{
     font-size: 1.2em;
     font-weight: bold;
     color: #333;
     margin: 5px 0;
-}
-
-.cta:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
 }
 
 section {
@@ -165,7 +172,6 @@ section {
     transform: scale(1.05); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
-
 
 a{
     text-decoration: none;
