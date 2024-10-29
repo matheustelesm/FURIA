@@ -4,12 +4,15 @@
     
 }
 
+
 body {
     background-color: #1C1C1C;
     color: white; 
     overflow-x: hidden;
     font-family: arial;
+    padding-top: 80px; 
 }
+
 
 /* Estilo do cabeçalho */
 header {
@@ -19,10 +22,20 @@ header {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    font-family: Georgia, serif;
-    
+    font-family: Arial, serif;
+    font-size: 18px;
+    position: fixed; /* Fixa o cabeçalho */
+    top: 0; /* Alinha o cabeçalho ao topo */
+    left: 0; /* Alinha o cabeçalho à esquerda */
+    right: 0; /* Alinha o cabeçalho à direita */
+    z-index: 1000; /* Coloca o cabeçalho acima de outros elementos */
 }
 
+h1, heade{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
 /* Estilo do logo */
 .logo {
     display: flex; 
@@ -166,7 +179,22 @@ main{
     border-radius: 10px;
     color:black;
 }
-/* Estilos do rodapé */
+.redes{
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+.redes:hover{
+    transform: scale(1.2);
+}
+.img-link{
+    width:15px;
+    height: 15px;
+}
+
 footer {
     background-color: black; /* Cor de fundo do rodapé */
     color: #fff; /* Cor do texto */
@@ -176,3 +204,8 @@ footer {
     bottom: 0; /* Fica na parte inferior */
     width: 100%; /* Largura total */
 }
+footer a:hover{
+    color: white;
+    font-weight: bold;
+}
+
